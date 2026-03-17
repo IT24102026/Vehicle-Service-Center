@@ -43,13 +43,6 @@ public class VehicleController {
         return ResponseEntity.ok(vehicleService.getById(id));
     }
 
-    @GetMapping("/customer/{customerId}")
-    public ResponseEntity<List<VehicleDTO>> getByCustomer(@PathVariable Long customerId,
-                                                          Authentication auth) {
-        if (!isAdmin(auth)) return ResponseEntity.status(403).build();
-        return ResponseEntity.ok(vehicleService.getByCustomerId(customerId));
-    }
-
     @GetMapping("/search")
     public ResponseEntity<List<VehicleDTO>> search(@RequestParam String q, Authentication auth) {
         if (isAdmin(auth)) return ResponseEntity.ok(vehicleService.search(q));
