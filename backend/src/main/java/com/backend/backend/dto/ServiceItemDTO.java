@@ -1,6 +1,6 @@
-package com.example.backend.dto;
+package com.backend.backend.dto;
 
-import com.example.backend.entity.ServiceItem;
+import com.backend.backend.entity.ServiceItem;
 import lombok.Data;
 import java.math.BigDecimal;
 
