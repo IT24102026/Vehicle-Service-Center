@@ -1,6 +1,6 @@
-package com.example.backend.security;
+package com.backend.backend.security;
 
-import com.example.backend.entity.User;
+import com.backend.backend.entity.User;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;
 import org.springframework.beans.factory.annotation.Value;

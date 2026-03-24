@@ -1,4 +1,4 @@
-package com.example.backend.config;
+package com.backend.backend.config;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -19,7 +19,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class JwtAuthFilter extends OncePerRequestFilter {
 
-    private final com.example.backend.security.JwtUtils jwtUtils;
+    private final com.backend.backend.security.JwtUtils jwtUtils;
 
     @Override
     protected void doFilterInternal(HttpServletRequest request,
