@@ -1,6 +1,6 @@
-package com.example.backend.dto;
+package com.backend.backend.dto;
 
-import com.example.backend.entity.ServiceOrder;
+import com.backend.backend.entity.ServiceOrder;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import java.math.BigDecimal;
